@@ -1,14 +1,25 @@
 <template>
   <nav>
-    <router-link class="bg-red-500 rounded-md p-2 text-inherit  " to="/">Home</router-link> |
-    <router-link class="bg-red-500 rounded-md p-2 text-inherit "  to="/about">About</router-link> |
-    <router-link class="bg-red-500 rounded-md p-2 text-inherit " to="/jobs">Jobs</router-link> |
-    <router-link class="bg-red-500 rounded-md p-2 text-inherit " to="/gallery">Gallery</router-link> | 
-    <router-link class="bg-red-500 rounded-md p-2 text-inherit " to="/login">login</router-link> 
+    <router-link :class="navclass" to="/">Home</router-link> |
+    <router-link :class="navclass" to="/about">About</router-link>
+    |
+    <router-link :class="navclass" to="/jobs">Jobs</router-link>
+    |
+    <router-link :class="navclass" to="/gallery">Gallery</router-link>
+    |
+    <router-link :class="navclass" to="/login">login</router-link>
   </nav>
   <router-view />
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      navclass: "bg-red-500 rounded-md p-2 text-inherit hover:bg-blue-400",
+    };
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
