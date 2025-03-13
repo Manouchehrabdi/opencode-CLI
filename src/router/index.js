@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
-import JobsView from "@/views/JobsView.vue";
-import galleryView from "@/views/GalleryView.vue";
-import loginView from "@/views/LoginView.vue";
+import HomeView from "../views/Home.vue";
+import JobsView from "@/views/Jobs.vue";
+import galleryView from "@/views/Gallery.vue";
+import loginView from "@/views/Login.vue";
 
 const routes = [
   {
@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: "/jobs",
-    name: "jobs",
+    name: "Jobs",
     component: JobsView,
   },
   {
@@ -32,7 +32,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
 ];
 
