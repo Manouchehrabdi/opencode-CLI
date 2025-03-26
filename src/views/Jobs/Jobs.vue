@@ -1,8 +1,8 @@
 <template>
   <h1>Jobs</h1>
-  <div v-for="job in jobs" :key="job.id">
+  <div class="flex justify-center "  v-for="job in jobs" :key="job.id">
     <h2
-      class="font-mono font-bold bg-[#e5e0e0] p-3 rounded-xl m-3  ju cursor-pointer hover:bg-sky-300"
+      class="font-mono font-bold bg-[#e5e0e0] p-3 rounded-xl m-3  ju cursor-pointer hover:bg-red-400 w-100 items-center"
     >
       {{ job.title }}
     </h2>

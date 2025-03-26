@@ -1,25 +1,14 @@
 <template>
   <nav>
-    <router-link :class="navclass" to="/">Home</router-link> |
-    <router-link :class="navclass" to="/about">About</router-link>
-    |
-    <router-link :class="navclass" to="/jobs">Jobs</router-link>
-    |
-    <router-link :class="navclass" to="/gallery">Gallery</router-link>
-    |
-    <router-link :class="navclass" to="/login">login</router-link>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>|
+    <router-link to="/jobs">Jobs</router-link>|
+    <router-link to="/gallery">Gallery</router-link>|
+    <router-link to="/login">login</router-link>
   </nav>
   <router-view />
 </template>
-<script>
-export default {
-  data() {
-    return {
-      navclass: "bg-red-500 rounded-md p-2 text-inherit hover:bg-blue-400",
-    };
-  },
-};
-</script>
+<script></script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -38,7 +27,10 @@ nav a {
   color: #2c3e50;
 }
 
-/* nav a.router-link-exact-active {
-  color: #91252e;
-} */
+nav a.router-link-exact-active {
+  background: crimson;
+  color: aliceblue;
+  padding: 5px;
+  border-radius: 5px;
+}
 </style>
