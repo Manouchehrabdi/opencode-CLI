@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <img class="ml-215" alt="Vue logo" src="../assets/logo.png" />
-    <h1 class="font-mono text-red-950 text-2xl mt-4">
+    <h1 class="font-mono text-red-950 text-2xl">
       Colossus: heavy-duty firefighting excellence:
     </h1>
-    <p class="text-left ml-20 mt-4 text-blue-400">
+    <p class="text-left ml-20  text-blue-400">
       The Colossus heavy firefighting robot, developed in collaboration with the
       Paris Fire Brigade (BSPP), is engineered to redefine firefighting
       capabilities in extreme environments. This robust robot excels in critical
