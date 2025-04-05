@@ -1,3 +1,10 @@
 <template>
-  <img class="mt-10 w-150" alt="Vue logo" src="../assets/Images/NotFound.png" />
+  <div class="flex justify-center pt-5">
+    <h3 class="bg-red-500 w-50 rounded-2xl  ">
+      Page Not Found
+    </h3>
+  </div>
+  <div class="flex justify-center pt-10">
+    <img class="" src="../assets/Images/NotFound.png" alt="" />
+  </div>
 </template>

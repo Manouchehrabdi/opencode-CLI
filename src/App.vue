@@ -6,9 +6,19 @@
     <router-link to="/gallery">Gallery</router-link> |
     <router-link to="/login">login</router-link>
   </nav>
+
+  <button
+    class="p-2 m border rounded-[8px] bg-blue-500 text-white"
+    @click="backward"
+  >
+    Go To Back
+  </button>
+  <button @click="redirect">Redirect</button>
+  <button @click="forword">Go To Forward</button>
+
   <router-view />
 </template>
-<script></script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
