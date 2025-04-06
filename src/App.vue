@@ -6,19 +6,32 @@
     <router-link to="/gallery">Gallery</router-link> |
     <router-link to="/login">login</router-link>
   </nav>
-
-  <button
-    class="p-2 m border rounded-[8px] bg-blue-500 text-white"
-    @click="backward"
-  >
-    Go To Back
-  </button>
-  <button @click="redirect">Redirect</button>
-  <button @click="forword">Go To Forward</button>
+  <div>
+    <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="backward">Go To Back</button>
+    <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="redirect">Redirect</button>
+    <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="forword">Go To Forward</button>
+  </div>
 
   <router-view />
 </template>
+<script>
 
+export default {
+  methods:{
+    backward(){
+      this.$router.go(-1)
+    },
+    redirect(){
+      this.$router.push({name:'Home'})
+
+    },
+    forword(){
+      this.$router.go(1)
+    }
+
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
