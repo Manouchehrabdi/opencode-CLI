@@ -1,42 +1,48 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/Home.vue";
-import JobsView from "@/views/Jobs/Jobs.vue";
-import galleryView from "@/views/Gallery.vue";
+// import HomeView from "../views/Home.vue";
+// import JobsView from "@/views/Jobs/Jobs.vue";
+// import galleryView from "@/views/Gallery.vue";
 import NotFound from "@/views/NotFound.vue";
-import loginView from "@/views/Login.vue";
-import JobsDetails from "@/views/Jobs/JobsDetails.vue";
-import About from "@/views/About.vue";
+// import loginView from "@/views/Login.vue";
+// import JobsDetails from "@/views/Jobs/JobsDetails.vue";
+// import About from "@/views/About.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
-    component: HomeView,
+    component: ()=>
+      import("../views/Home.vue")
   },
   {
     path: "/about",
     name: "about",
-    component: About,
+    component: ()=>
+      import("../views/About.vue")
   },
   {
     path: "/jobs",
     name: "Jobs",
-    component: JobsView,
+    component: ()=>
+      import("../views/Jobs/Jobs.vue")
   },
   {
     path: "/gallery",
     name: "gallery",
-    component: galleryView,
+    component: ()=>
+      import("../views/Gallery.vue")
   },
   {
     path: "/login",
     name: "Login",
-    component: loginView,
+    component: ()=>
+      import("../views/Login.vue")
   },
   {
     path: "/jobs/:slug",
     name: "JobsDetails",
-    component: JobsDetails,
+    component: ()=>
+      import("../views/Jobs/JobsDetails.vue")
   },
   //Redirect
   {
