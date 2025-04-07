@@ -7,7 +7,7 @@
     <router-link to="/login">ورود</router-link>
   </nav>
   <div>
-    <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="backward">برگشت</button>
+    <button class="text-white bg-cyan-500 shadow-lg shadow-cyan-500/50    hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="backward">برگشت</button>
     <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="redirect">صفحه اصلی</button>
     <button class="text-white bg-blue-700 hover:bg-red-800 focus:ring-4  cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-red-800" @click="forword">جلو</button>
   </div>
@@ -46,7 +46,7 @@ nav {
 }
 
 nav a {
-  font-weight: bold;
+
   color: #2c3e50;
 }
 
@@ -54,8 +54,6 @@ nav a.router-link-exact-active {
   background: crimson;
   color: aliceblue;
   padding: 5px;
-  
   border-radius: 7px;
-  
 }
 </style>

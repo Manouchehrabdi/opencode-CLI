@@ -13,37 +13,37 @@ const routes = [
     path: "/",
     name: "Home",
     component: ()=>
-      import("../views/Home.vue")
+      import(/*webpackChunkName:"home"*/"../views/Home.vue")
   },
   {
     path: "/about",
     name: "about",
     component: ()=>
-      import("../views/About.vue")
+      import(/*webpackChunkName:"about"*/"../views/About.vue")
   },
   {
     path: "/jobs",
     name: "Jobs",
     component: ()=>
-      import("../views/Jobs/Jobs.vue")
+      import(/*webpackChunkName:"jobs"*/"../views/Jobs/Jobs.vue")
   },
   {
     path: "/gallery",
     name: "gallery",
     component: ()=>
-      import("../views/Gallery.vue")
+      import(/*webpackChunkName:"gallery"*/"../views/Gallery.vue")
   },
   {
     path: "/login",
     name: "Login",
     component: ()=>
-      import("../views/Login.vue")
+      import(/*webpackChunkName:"login"*/"../views/Login.vue")
   },
   {
     path: "/jobs/:slug",
     name: "JobsDetails",
     component: ()=>
-      import("../views/Jobs/JobsDetails.vue")
+      import(/*webpackChunkName:"jobsDetails"*/"../views/Jobs/JobsDetails.vue")
   },
   //Redirect
   {

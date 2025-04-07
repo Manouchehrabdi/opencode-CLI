@@ -13,17 +13,14 @@
 export default {
   data() {
     return {
-      jobs: [
-        {
-          title: "Open code Javascript",
-          id: 1,
-          slug: "جاوااسکریپت",
-          details: "lorem",
-        },
-        { title: "Open code React", id: 2, slug: "ریکت", details: "lorem" },
-        { title: "Open code Vue3", id: 3, slug: "ویو", details: "lorem" },
-      ],
+      jobs: [],
     };
+  },
+  mounted() {
+    fetch("http://localhost:3000/jobs")
+      .then((res) => res.json( ))
+      .then((data) => (this.jobs = data))
+      .catch((err) => console.log(err.message));
   },
 };
 </script>
