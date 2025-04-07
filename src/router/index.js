@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // import JobsView from "@/views/Jobs/Jobs.vue";
 // import galleryView from "@/views/Gallery.vue";
 import NotFound from "@/views/NotFound.vue";
+
 // import loginView from "@/views/Login.vue";
 // import JobsDetails from "@/views/Jobs/JobsDetails.vue";
 // import About from "@/views/About.vue";

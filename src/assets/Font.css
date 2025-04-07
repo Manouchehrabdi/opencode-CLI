@@ -1,4 +1,10 @@
 @font-face {
-    font-family: ;
-    src: url();
+  font-family: "Yekan";
+  src: url("../assets/Font/Yekan.otf");
+  src: url("../assets/Font/Yekan.ttf") format("ttf"),
+    url("../assets/Font/Yekan.woff") format("woff");
+}
+:root {
+  font-family: "Yekan";
+  font-size: 20px;
 }
